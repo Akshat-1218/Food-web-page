@@ -157,10 +157,10 @@ function initCart() {
         badge.id = "cart-badge";
         badge.textContent = "0";
         badge.style.display = "none";
-        bagIcon.parentElement.style.position = "relative";
         bagIcon.parentElement.style.cursor = "pointer";
-        bagIcon.parentElement.appendChild(badge);
-        bagIcon.parentElement.addEventListener("click", toggleCart);
+        bagIcon.style.position = "relative";
+bagIcon.appendChild(badge);
+bagIcon.addEventListener("click", toggleCart);
     }
 
     document.getElementById("close-cart").addEventListener("click", toggleCart);
